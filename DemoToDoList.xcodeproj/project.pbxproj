@@ -14,6 +14,9 @@
 		294B60CA2953016200F0DA21 /* DemoToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B60C92953016200F0DA21 /* DemoToDoListTests.swift */; };
 		294B60D42953016200F0DA21 /* DemoToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B60D32953016200F0DA21 /* DemoToDoListUITests.swift */; };
 		294B60D62953016200F0DA21 /* DemoToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B60D52953016200F0DA21 /* DemoToDoListUITestsLaunchTests.swift */; };
+		294B60E32953056200F0DA21 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B60E22953056200F0DA21 /* ToDo.swift */; };
+		294B60E52953061400F0DA21 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B60E42953061400F0DA21 /* DataManager.swift */; };
+		294B60EA29530AB800F0DA21 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B60E929530AB800F0DA21 /* ToDoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		294B60CF2953016200F0DA21 /* DemoToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		294B60D32953016200F0DA21 /* DemoToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoToDoListUITests.swift; sourceTree = "<group>"; };
 		294B60D52953016200F0DA21 /* DemoToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		294B60E22953056200F0DA21 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		294B60E42953061400F0DA21 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		294B60E929530AB800F0DA21 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				294B60B82953016000F0DA21 /* DemoToDoListApp.swift */,
 				294B60BA2953016000F0DA21 /* ContentView.swift */,
+				294B60E629530A6800F0DA21 /* Model */,
+				294B60E729530A7D00F0DA21 /* DataManager */,
+				294B60E829530A9E00F0DA21 /* ToDoView */,
 				294B60BC2953016100F0DA21 /* Assets.xcassets */,
 				294B60BE2953016100F0DA21 /* Preview Content */,
 			);
@@ -125,6 +134,30 @@
 				294B60D52953016200F0DA21 /* DemoToDoListUITestsLaunchTests.swift */,
 			);
 			path = DemoToDoListUITests;
+			sourceTree = "<group>";
+		};
+		294B60E629530A6800F0DA21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				294B60E22953056200F0DA21 /* ToDo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		294B60E729530A7D00F0DA21 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				294B60E42953061400F0DA21 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		294B60E829530A9E00F0DA21 /* ToDoView */ = {
+			isa = PBXGroup;
+			children = (
+				294B60E929530AB800F0DA21 /* ToDoListViewModel.swift */,
+			);
+			path = ToDoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294B60EA29530AB800F0DA21 /* ToDoListViewModel.swift in Sources */,
+				294B60E32953056200F0DA21 /* ToDo.swift in Sources */,
 				294B60BB2953016000F0DA21 /* ContentView.swift in Sources */,
 				294B60B92953016000F0DA21 /* DemoToDoListApp.swift in Sources */,
+				294B60E52953061400F0DA21 /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
